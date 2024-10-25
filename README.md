@@ -13,7 +13,7 @@ Este proyecto permite extraer los comentarios de un video de YouTube utilizando 
 
 3. Crear el entorno virtual: ```python -m venv .venv```
 
-4. Activar entorno virtual: ```.venv\\Scripts\\activate```
+4. Activar entorno virtual: ```.venv\Scripts\activate```
 
 5. Instalar dependencias: ```pip install -r requirements.txt```
 
