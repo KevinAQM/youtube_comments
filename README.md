@@ -18,9 +18,9 @@ Este proyecto permite extraer los comentarios de un video de YouTube utilizando 
 5. Instalar dependencias: ```pip install -r requirements.txt```
 
 6. Configurar variables de entorno:
-- Copiar \`.env.example\` a \`.env\`
+- Renombrar el archivo ```.env.example``` a ```.env```
 - Obtener una API KEY de YouTube ([YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com))
-- Añadir tu API KEY en el archivo \`.env\`
+- Añadir tu API KEY en el archivo ```.env```
 
 ## Uso
 En el terminal:
