@@ -17,9 +17,9 @@ cd youtube_comments
 \`\`\`bash
 python -m venv .venv
 
-# En Windows:
+### En Windows:
 .venv\\Scripts\\activate
-# En Unix o MacOS:
+### En Unix o MacOS:
 source .venv/bin/activate
 \`\`\`
 
