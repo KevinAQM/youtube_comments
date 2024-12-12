@@ -26,7 +26,7 @@ This project extracts all comments from a YouTube video and saves them to a CSV 
 2. **Create a virtual environment (recommended):**
 
     ```bash
-    python3 -m venv venv
+    python -m venv .venv
     ```
 
 3. **Activate the virtual environment:**
@@ -34,13 +34,13 @@ This project extracts all comments from a YouTube video and saves them to a CSV 
     *   **Windows:**
 
         ```bash
-        venv\Scripts\activate
+        .venv\Scripts\activate
         ```
 
     *   **Linux/macOS:**
 
         ```bash
-        source venv/bin/activate
+        source .venv/bin/activate
         ```
 
 4. **Install the dependencies:**
