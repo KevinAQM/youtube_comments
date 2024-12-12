@@ -1,32 +1,105 @@
-## Descripción
-Este proyecto permite extraer los comentarios de un video de YouTube utilizando la API oficial de Google/YouTube.
 
-## Requisitos previos
-- Python 3.x
-- Una API Key de YouTube
+## Requirements
 
-## Instalación
+*   Python 3.6+
+*   A YouTube Data API v3 key. You can obtain one by following the instructions in the [official documentation](https://developers.google.com/youtube/v3/getting-started).
+*   Dependencies are listed in the `requirements.txt` file.
 
-1. Clonar el repositorio: ```git clone https://github.com/KevinAQM/youtube_comments.git```
+## Installation
 
-2. Dirijirse a la carpeta del proyecto: ```cd youtube_comments```
+1. **Clone the repository:**
 
-3. Crear el entorno virtual: ```python -m venv .venv```
+    ```bash
+    git clone <repository URL>
+    cd <repository name>
+    ```
 
-4. Activar entorno virtual: ```.venv\Scripts\activate```
+2. **Create a virtual environment (recommended):**
 
-5. Instalar dependencias: ```pip install -r requirements.txt```
+    ```bash
+    python3 -m venv venv
+    ```
 
-6. Configurar variables de entorno:
-   - Renombrar el archivo ```.env.example``` a ```.env```
-   - Obtener una API KEY de YouTube ([YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com))
-   - Añadir tu API KEY en el archivo ```.env```
+3. **Activate the virtual environment:**
 
-## Uso
-En el terminal:
-- Ejecutar la aplicación: ```python main.py```
-- Ingresar la URL del video de YouTube.
-- ¡Listo! Tu resultado se habrá guardado en la carpeta 'outputs' como un archivo CSV.
+    *   **Windows:**
 
-## Licencia
-Este proyecto está bajo la Licencia MIT.
+        ```bash
+        venv\Scripts\activate
+        ```
+
+    *   **Linux/macOS:**
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+4. **Install the dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. **Create a `.env` file in the root of the project and save your YouTube API key:**
+
+    ```
+    YOUTUBE_API_KEY=YOUR_API_KEY_HERE
+    ```
+
+    **Note:** Replace `YOUR_API_KEY_HERE` with your actual API key.
+
+## Usage
+
+1. **Run the main script `project.py`:**
+
+    ```bash
+    python project.py
+    ```
+
+2. **The script will prompt you to enter the YouTube video link:**
+
+    ```
+    Enter the YouTube link:
+    ```
+
+    Enter the full video link, for example: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+
+3. **The script will extract the comments and save them to a CSV file inside the `outputs/` folder:**
+
+    The CSV file will be named with the video ID. For example: `outputs/dQw4w9WgXcQ.csv`
+
+    Each row in the CSV will contain the following information for each comment:
+
+    *   `textDisplay`: The comment text.
+    *   `likeCount`: The number of likes the comment has.
+    *   `authorDisplayName`: The name of the comment's author.
+    *   `authorChannelUrl`: The link to the author's channel.
+    *   `authorChannelId`: The ID of the author's channel.
+    *   `publishedAt`: The date and time the comment was published.
+    *   `updatedAt`: The date and time the comment was last updated.
+
+## Testing
+
+The project includes unit tests using `pytest`. To run them:
+
+1. Make sure you are in the root directory of the project and that the virtual environment is activated.
+2. Run the following command:
+
+    ```bash
+    pytest
+    ```
+
+    This will execute all test functions in the `test_project.py` file.
+
+## Notes
+
+*   The YouTube API has a usage quota limit. If the quota is exceeded, the script may fail or not extract all comments.
+*   Make sure not to share your API key publicly.
+
+## Contributions
+
+Contributions are welcome! If you find a bug or have a suggestion for improvement, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` file for details.
