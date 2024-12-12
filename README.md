@@ -1,3 +1,15 @@
+# YouTube Comment Extractor
+
+This project extracts all comments from a YouTube video and saves them to a CSV file.
+
+## Project Structure
+
+project/
+├── outputs/ # Folder where generated CSV files are saved
+├── project.py # Main script containing the program logic
+├── requirements.txt # File with project dependencies
+└── test_project.py # Unit tests for the main script
+└── README.md # Readme file (this file)
 
 ## Requirements
 
