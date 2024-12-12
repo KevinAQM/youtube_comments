@@ -1,6 +1,6 @@
 # YouTube Comment Extractor
 
-## Video Demo: <URL HERE>
+### Video Demo: <URL HERE>
 
 ## Description
 This project extracts all comments from a YouTube video and saves them to a CSV file.
