@@ -3,13 +3,7 @@
 This project extracts all comments from a YouTube video and saves them to a CSV file.
 
 ## Project Structure
-
-project/
-├── outputs/ # Folder where generated CSV files are saved
-├── project.py # Main script containing the program logic
-├── requirements.txt # File with project dependencies
-└── test_project.py # Unit tests for the main script
-└── README.md # Readme file (this file)
+![image](https://github.com/user-attachments/assets/aa81759b-6012-4624-ba07-8f1c863fcb93)
 
 ## Requirements
 
