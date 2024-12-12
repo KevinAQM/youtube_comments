@@ -87,28 +87,11 @@ This project extracts all comments from a YouTube video and saves them to a CSV 
     *   `publishedAt`: The date and time the comment was published.
     *   `updatedAt`: The date and time the comment was last updated.
 
-## Testing
-
-The project includes unit tests using `pytest`. To run them:
-
-1. Make sure you are in the root directory of the project and that the virtual environment is activated.
-2. Run the following command:
-
-    ```bash
-    pytest
-    ```
-
-    This will execute all test functions in the `test_project.py` file.
-
 ## Notes
 
 *   The YouTube API has a usage quota limit. If the quota is exceeded, the script may fail or not extract all comments.
 *   Make sure not to share your API key publicly.
 
-## Contributions
-
-Contributions are welcome! If you find a bug or have a suggestion for improvement, please open an issue or submit a pull request.
-
 ## License
 
-This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` file for details.
+This project is licensed under the [MIT License](LICENSE)
