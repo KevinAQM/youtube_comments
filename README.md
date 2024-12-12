@@ -3,7 +3,7 @@
 This project extracts all comments from a YouTube video and saves them to a CSV file.
 
 ## Project Structure
-![image](https://github.com/user-attachments/assets/aa81759b-6012-4624-ba07-8f1c863fcb93)
+![image](https://github.com/user-attachments/assets/4bc783f8-6b55-4f1a-8300-f66fdbe52a60)
 
 ## Requirements
 
